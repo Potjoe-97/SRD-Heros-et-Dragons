@@ -54,130 +54,119 @@ flags:
 img: icons/svg/mystery-man.svg
 system:
   description:
-    value: >-
-      <h2 id="traits-des-humains">Traits des humains</h2>
-
-      <p><strong>Augmentation de caractéristiques</strong>. La valeur de toutes
-      vos caractéristiques augmente de 1.</p>
-
-      <hr>
-
-      <p><strong>Âge.</strong> Les humains deviennent adultes à la fin de
-      l'adolescence et vivent moins d'un siècle.</p>
-
-      <hr>
-
-      <p><strong>Alignement.</strong> Les humains ne sont pas naturellement
-      attirés vers un certain type d'alignement. On trouve parmi eux le meilleur
-      comme le pire.</p>
-
-      <hr>
-
-      <p><strong>Taille.</strong> Les humains ont des tailles et des carrures
-      très variées. Ils peuvent faire 1,50 mètre comme plus de 1,90 mètre. Vous
-      êtes considéré comme une créature de taille moyenne, peu importe votre
-      taille, votre poids ou votre carrure.</p>
-
-      <hr>
-
-      <p><strong>Vitesse</strong>. Votre vitesse au sol de base est de 9
-      mètres.</p>
-
-      <hr>
-
-      <p><strong>Langues</strong>. Vous pouvez parler, lire et écrire en commun
-      et dans une langue supplémentaire de votre choix. Les humains apprennent
-      généralement la langue des peuples qu'ils fréquentent, même s'il s'agit
-      parfois d'obscurs dialectes. Ils aiment parsemer leur langue d'expressions
-      empruntées à d'autres races : des jurons orcs, des expressions musicales
-      elfes, des citations militaires naines, etc.</p>
-
-      <p>&nbsp;</p>
-
-      <h3 id="variante-technique"><strong>Variante technique</strong></h3>
-
-      <hr>
-
-      <p>En lieu et place de l'augmentation de caractéristiques, vous pouvez
-      opter pour l'une ou l'autre des options techniques qui suivent :</p>
-
-      <ul>
-
-      <li>La valeur de trois de vos caractéristiques augmente de 1 ; choisissez
-      un don.</li>
-
-      <li>La valeur de quatre de vos caractéristiques augmente de 1 ; choisissez
-      deux compétences, outils ou langues, que vous maîtrisez désormais.</li>
-
-      </ul>
+    value: '<h2 id="traits-des-humains">Traits des humains</h2><p><strong>Augmentation
+      de caractéristiques</strong>. La valeur de toutes vos caractéristiques augmente
+      de 1.</p><hr><p><strong>Âge.</strong> Les humains deviennent adultes à la fin
+      de l''adolescence et vivent moins d''un siècle.</p><hr><p><strong>Alignement.</strong>
+      Les humains ne sont pas naturellement attirés vers un certain type d''alignement.
+      On trouve parmi eux le meilleur comme le pire.</p><hr><p><strong>Taille.</strong>
+      Les humains ont des tailles et des carrures très variées. Ils peuvent faire
+      1,50 mètre comme plus de 1,90 mètre. Vous êtes considéré comme une créature
+      de taille moyenne, peu importe votre taille, votre poids ou votre carrure.</p><hr><p><strong>Vitesse</strong>.
+      Votre vitesse au sol de base est de 9 mètres.</p><hr><p><strong>Langues</strong>.
+      Vous pouvez parler, lire et écrire en commun et dans une langue supplémentaire
+      de votre choix. Les humains apprennent généralement la langue des peuples qu''ils
+      fréquentent, même s''il s''agit parfois d''obscurs dialectes. Ils aiment parsemer
+      leur langue d''expressions empruntées à d''autres races : des jurons orcs, des
+      expressions musicales elfes, des citations militaires naines, etc.</p><p> </p><h3
+      id="variante-technique"><strong>Variante technique</strong></h3><hr><p>En lieu
+      et place de l''augmentation de caractéristiques, vous pouvez opter pour l''une
+      ou l''autre des options techniques qui suivent :</p><ul><li>La valeur de trois
+      de vos caractéristiques augmente de 1 ; choisissez un don.</li><li>La valeur
+      de quatre de vos caractéristiques augmente de 1 ; choisissez deux compétences,
+      outils ou langues, que vous maîtrisez désormais.</li></ul>'
     chat: ''
-    unidentified: ''
-  source: Manuel des règles
-  activation:
-    type: ''
-    cost: 0
-    condition: ''
-  duration:
-    value: null
-    units: ''
-  cover: null
-  crewed: false
-  target:
-    value: null
-    width: null
-    units: ''
-    type: ''
-  range:
-    value: null
-    long: null
-    units: ''
-  uses:
-    value: 0
-    max: 0
-    per: null
-    recovery: ''
-  consume:
-    type: ''
-    target: null
-    amount: null
-  ability: null
-  actionType: ''
-  attackBonus: 0
-  chatFlavor: ''
-  critical:
-    threshold: null
-    damage: null
-  damage:
-    parts: []
-    versatile: ''
-  formula: ''
-  save:
-    ability: ''
-    dc: null
-    scaling: spell
+  source:
+    custom: Manuel des règles
+    revision: 1
+    rules: '2024'
   type:
-    value: ''
-    subtype: ''
-  requirements: ''
-  recharge:
-    value: null
-    charged: false
-  attributes:
-    spelldc: 10
-ownership:
-  default: 0
-  52HofoNc1le7TcnZ: 3
+    value: humanoid
+    subtype: Humain
+    custom: ''
+  identifier: humain
+  advancement:
+  - _id: h4oN7btEWjS9qpKM
+    type: AbilityScoreImprovement
+    configuration:
+      cap: 2
+      fixed:
+        str: 1
+        dex: 1
+        con: 1
+        int: 1
+        wis: 1
+        cha: 1
+      locked:
+      - str
+      - dex
+      - con
+      - int
+      - wis
+      - cha
+      points: 0
+    value:
+      type: asi
+    level: 0
+    title: ''
+    hint: ''
+  - _id: BfIT1RvLnoJvH7Db
+    type: Trait
+    configuration:
+      mode: default
+      allowReplacements: false
+      grants:
+      - languages:standard:common
+      choices:
+      - count: 1
+        pool:
+        - languages:*
+    value:
+      chosen: []
+    level: 0
+    title: ''
+    hint: ''
+  - _id: OEv6RDXirAYxyb2x
+    type: ItemChoice
+    configuration:
+      choices: {}
+      allowDrops: true
+      type: 
+      pool:
+      - uuid: Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5
+      spell: 
+      restriction: {}
+    value:
+      added: {}
+      replaced: {}
+  - _id: hktdUw7wxcIDQz4v
+    type: Size
+    configuration:
+      sizes:
+      - med
+    level: 0
+    value: {}
+  movement:
+    burrow: 
+    climb: 
+    fly: 
+    swim: 
+    walk: 9
+    units: 
+    hover: false
+  senses:
+    darkvision: 
+    blindsight: 
+    tremorsense: 
+    truesight: 
+    units: 
+    special: ''
 effects: []
-folder: null
-sort: 0
+folder: y3tcjvIGnW8AEBAB
 _stats:
+  coreVersion: '12.331'
   systemId: dnd5e
-  systemVersion: 2.0.3
-  coreVersion: '12.330'
-  createdTime: 1663923697905
-  modifiedTime: 1663923698008
-  lastModifiedBy: jxF0Pjz3E2EU23q5
-  compendiumSource: null
-  duplicateSource: null
-_key: '!items!D8TKuBNZUKoSWuex'
-
+  systemVersion: 4.0.4
+  createdTime: 1731410490325
+  modifiedTime: 1731411361820
+  lastModifiedBy: ghisOLmc1sDNXhGd
