@@ -11,7 +11,7 @@
   "compatibility": {
     "minimum": "11",
     "verified": "12",
-    "maximum": "12"
+    "maximum": "13"
   },
   "relationships": {
     "systems": [
@@ -21,7 +21,7 @@
         "compatibility": {
           "minimum": "2.0.1",
           "verified": "4.0.3",
-          "maximum": "4.9.9"
+          "maximum": "5.7.9"
         }
       }
     ]
